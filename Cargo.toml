@@ -1,0 +1,10 @@
+[package]
+name = "v-authx"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["OpenAI"]
+description = "Vector Network authentication, certification, AuthRatio, origin, and drain core"
+readme = "README.md"
+
+[dependencies]

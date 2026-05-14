@@ -1,0 +1,164 @@
+# =========================================================
+# v-authx — Canonical .gitignore
+# Vector Network Authentication + Certification Layer
+# =========================================================
+
+# ---------------------------------------------------------
+# Rust build artifacts
+# ---------------------------------------------------------
+/target
+/debug
+/release
+**/*.rs.bk
+
+# Cargo generated lockfile
+# Keep Cargo.lock for applications.
+# Remove the next line if this crate becomes a binary app.
+Cargo.lock
+
+# ---------------------------------------------------------
+# Rust analyzer / IDE
+# ---------------------------------------------------------
+.rustc_info.json
+
+# ---------------------------------------------------------
+# Python
+# ---------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Type checking
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------
+# Logs
+# ---------------------------------------------------------
+*.log
+logs/
+*.tmp
+*.temp
+
+# ---------------------------------------------------------
+# OS generated files
+# ---------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------------
+# IDEs / Editors
+# ---------------------------------------------------------
+
+# VSCode
+.vscode/
+
+# IntelliJ / RustRover / CLion
+.idea/
+
+# Vim
+*.swp
+*.swo
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# ---------------------------------------------------------
+# Environment / secrets
+# ---------------------------------------------------------
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.der
+
+# NEVER commit private signing keys
+keys/
+wallets/
+secrets/
+private/
+*.seed
+
+# ---------------------------------------------------------
+# Generated artifacts
+# ---------------------------------------------------------
+artifacts/
+exports/
+reports/
+benchmarks/
+
+# ---------------------------------------------------------
+# Temporary replay/snapshot files
+# ---------------------------------------------------------
+snapshots/tmp/
+replay-cache/
+cache/
+
+# ---------------------------------------------------------
+# Binary outputs
+# ---------------------------------------------------------
+*.exe
+*.dll
+*.so
+*.dylib
+
+# ---------------------------------------------------------
+# Test outputs
+# ---------------------------------------------------------
+test-output/
+fixtures/generated/
+
+# ---------------------------------------------------------
+# Coverage
+# ---------------------------------------------------------
+tarpaulin-report.html
+
+# ---------------------------------------------------------
+# Node / frontend (future explorer integration)
+# ---------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---------------------------------------------------------
+# macOS
+# ---------------------------------------------------------
+.AppleDouble
+.LSOverride
+
+# ---------------------------------------------------------
+# Linux
+# ---------------------------------------------------------
+*~
+
+# ---------------------------------------------------------
+# Windows
+# ---------------------------------------------------------
+ehthumbs.db
